@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/sefaria",
   "title": "Sefaria",
   "description": "Sefaria MCP — the free digital library of Jewish texts.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/sefaria",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-sefaria",
