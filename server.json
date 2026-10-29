@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/sefaria",
   "title": "Sefaria",
-  "description": "Sefaria MCP — the free digital library of Jewish texts.",
-  "version": "0.1.2",
+  "description": "Sefaria MCP — the free digital library of Jewish texts. Fetch any passage (Torah, Talmud, Mishnah…",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/sefaria",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-sefaria",

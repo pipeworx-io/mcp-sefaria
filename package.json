@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-sefaria",
-  "version": "0.1.2",
-  "description": "Sefaria MCP — the free digital library of Jewish texts.",
+  "version": "0.2.0",
+  "description": "Sefaria MCP — the free digital library of Jewish texts. Fetch any passage (Torah, Talmud, Mishnah, Midrash, commentaries) in Hebrew and/or English by reference, validate/autocomplete a reference, and list the commentaries and cross-references on a passage. Keyless.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-sefaria": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sefaria"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-sefaria.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/sefaria",
   "pipeworx": {
-    "sourceHash": "v1-98002df373218829108a94a4866d10793201e4faf3903340a6872084e58be605",
-    "sourceCommit": "6fe8fb3e01138dfc4ebe7d5c246503aab9278d06"
+    "mode": "gateway",
+    "slug": "sefaria",
+    "gatewaySlug": "sefaria",
+    "sourceHash": "v1-fde0409bd2b22d1b8ce93717c4866ffd982779bd7e9c208576ee45ca25911e4a",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
